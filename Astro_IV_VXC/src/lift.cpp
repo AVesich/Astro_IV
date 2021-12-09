@@ -5,7 +5,7 @@ bool clawClosed = false;
 // Funcs
 // Operator control
 void liftOp() {
-  if (Controller1.ButtonX.pressing() || Controller2.ButtonR1.pressing()) { // Up
+  if (Controller1.ButtonY.pressing() || Controller2.ButtonR1.pressing()) { // Up
     if (RLift.position(rotationUnits::deg) < 560) {
       RLift.spin(directionType::fwd, 100, velocityUnits::pct);
       LLift.spin(directionType::fwd, 100, velocityUnits::pct);
@@ -13,7 +13,7 @@ void liftOp() {
       RLift.stop();
       LLift.stop();
     }
-  } else if (Controller1.ButtonUp.pressing() || Controller2.ButtonL1.pressing()) { // Down
+  } else if (Controller1.ButtonRight.pressing() || Controller2.ButtonL1.pressing()) { // Down
     if (!LiftBumper.pressing()) {
       RLift.spin(directionType::rev, 100, velocityUnits::pct);
       LLift.spin(directionType::rev, 100, velocityUnits::pct);

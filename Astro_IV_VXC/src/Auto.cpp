@@ -105,12 +105,11 @@ void skills() {
   m_driveTrain.mh8_driveToCoord(-0.98, -1.21, 175, 500, true);
   liftClawAuto(true);
   wait(100, msec);
-  m_driveTrain.mh8_driveToCoord(-0.98, -1.1, 175, 500, false);
+  m_driveTrain.mh8_driveToCoord(-0.98, -1.0, 175, 500, false);
   liftTarget = 550;
-  m_driveTrain.mh8_driveToCoord(0.63, 0.76, 210, 500, false);
-  m_driveTrain.mh8_DriveStraight(50, 500, 'b');
-  //m_driveTrain.mh8_driveToCoord(0.63, 0.76, 95, 500, false);
-  //m_driveTrain.mh8_driveToCoord(0.73, -1.18, 315, 500, false);
+  m_driveTrain.mh8_driveToCoord(1.12, 1.20, 215, 500, false);
+  m_driveTrain.mh8_DriveStraight(48, 500, 'b');
+  //m_driveTrain.mh8_driveToCoord(1.12, 1.20, 215, 500, false);
   liftTask.stop();
   mogoLiftTask.stop();
 }
